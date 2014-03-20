@@ -1,0 +1,33 @@
+{
+  "name": "grappler",
+  "version": "0.1.0",
+  "description": "Pluggable deploy system",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camshaft/grappler.git"
+  },
+  "keywords": [
+    "deploy",
+    "grappler"
+  ],
+  "author": "Cameron Bytheway <bytheway.cameron@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camshaft/grappler/issues"
+  },
+  "homepage": "https://github.com/camshaft/grappler",
+  "dependencies": {
+    "simple-stack-common": "~0.2.3",
+    "mktemp": "~0.3.4",
+    "rimraf": "~2.2.6"
+  },
+  "devDependencies": {
+    "should": "~3.1.4",
+    "supertest": "~0.9.2",
+    "mocha": "~1.18.2"
+  }
+}
