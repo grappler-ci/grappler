@@ -1,4 +1,4 @@
-grappler
+grappler [![Build Status](https://travis-ci.org/camshaft/grappler.png?branch=master)](https://travis-ci.org/camshaft/grappler)
 ========
 
 Pluggable deploy system

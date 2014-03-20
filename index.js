@@ -4,7 +4,8 @@
 
 var stack = require('simple-stack-common');
 var tmpdir = require('os').tmpdir();
-var mktmp = require('mktemp').createDir.bind(null, tmpdir + 'grappler-' + process.pid + '-XXXXXX');
+var join = require('path').join;
+var mktmp = require('mktemp').createDir.bind(null, join(tmpdir, 'grappler-' + process.pid + '-XXXXXX'));
 var rimraf = require('rimraf');
 
 /**
