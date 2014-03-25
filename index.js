@@ -142,5 +142,6 @@ Task.prototype.cleanup = function(fn) {
   self.log('info', 'cleaning up ' + self.dir);
   rimraf(self.dir, function(err) {
     if (err) self.log('err', err.stack);
+    if (fn) fn();
   });
 };
