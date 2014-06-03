@@ -9,6 +9,12 @@ var rimraf = require('rimraf');
 var Emitter = require('component-emitter');
 
 /**
+ * Expose the task
+ */
+
+module.exports = Task;
+
+/**
  * A deployment task
  *
  * @param {Request} req
@@ -26,7 +32,7 @@ function Task(info, log) {
     self.cleanup();
   });
 }
-Emitter(Task);
+Emitter(Task.prototype);
 
 /**
  * Clone the repository into a tmp dir with a handler plugin
@@ -53,7 +59,7 @@ Task.prototype.clone = function(name, handler) {
 
 Task.prototype.ready = function() {
   var self = this;
-  run(self, self._pre, 0, function(err) {
+  run(self, 0, function(err) {
     if (err === 'pass') return self.emit('complete');
     if (err) return self.emit('error', err);
     self.emit('ready');
