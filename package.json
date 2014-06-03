@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/camshaft/grappler.git"
+    "url": "https://github.com/grappler-ci/grappler.git"
   },
   "keywords": [
     "deploy",
@@ -17,9 +17,9 @@
   "author": "Cameron Bytheway <bytheway.cameron@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/camshaft/grappler/issues"
+    "url": "https://github.com/grappler-ci/grappler/issues"
   },
-  "homepage": "https://github.com/camshaft/grappler",
+  "homepage": "https://github.com/grappler-ci/grappler",
   "dependencies": {
     "simple-stack-common": "~0.2.3",
     "mktemp": "~0.3.4",
